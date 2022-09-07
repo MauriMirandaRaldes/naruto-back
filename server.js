@@ -10,10 +10,6 @@ const PORT = 4000
 
 const app = express()
 
-app.get("/", (req,res)=> {
-    res.send("El servidor está funcionando")
-})
-
 //middlewares
 app.use(express.static(path.join(__dirname, "storage")))
 app.use(cors())
